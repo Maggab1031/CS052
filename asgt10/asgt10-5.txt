@@ -1,0 +1,19 @@
+a - a,aa,aaa,aaaa,aaaaa,aaaaaa
+a + aa => aa is in lang, aaa is not
+a + aaa => aaaaa is in lang, aaa is not
+a + aaaa => aaaaaa is in lang, aaa is not
+a + aaaaa =>  aaaaaaaaaaaaaaa is in lang, aaaaaaaaaaa is not
+a + aaaaaa => aa is in lang, aaaaaaa is not
+aa + aaa => aaaa is in lang, aaa is not
+aa  + aaaa => aaaaa is in lang, aaa is not
+aa + aaaaa => aaaaaa is in lang, aaa is not
+aa + aaaaaa => aaaaa is in lang, aaaaaaaaa is not
+aaa + aaaa => aaaaaaaaaa is in lang, aaaaaaaaa is not
+aaa + aaaaa => aaaaa is in lang, aaaaaaa is not
+aaa + aaaaaa => aaaa is in lang, aaaaaaaa is not
+aaaa + aaaaa => aaaaaa is in lang, aaaaaaa is not
+aaaa + aaaaaa =? aaaaa is in lang, aaaaaaa is not
+aaaaa + aaaaaa => aaaaaa is in lang, aaaaaaaa is not
+
+b- It must have six states because you need a state for length zero, length one, 
+length two(final), length three, length four (final), and length five (final)
